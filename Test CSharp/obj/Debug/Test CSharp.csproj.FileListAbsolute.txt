@@ -1,0 +1,6 @@
+C:\Users\sushi\source\repos\Test CSharp\Test CSharp\obj\Debug\Test CSharp.csprojAssemblyReference.cache
+C:\Users\sushi\source\repos\Test CSharp\Test CSharp\bin\Debug\Test CSharp.exe.config
+C:\Users\sushi\source\repos\Test CSharp\Test CSharp\bin\Debug\Test CSharp.exe
+C:\Users\sushi\source\repos\Test CSharp\Test CSharp\bin\Debug\Test CSharp.pdb
+C:\Users\sushi\source\repos\Test CSharp\Test CSharp\obj\Debug\Test CSharp.exe
+C:\Users\sushi\source\repos\Test CSharp\Test CSharp\obj\Debug\Test CSharp.pdb
