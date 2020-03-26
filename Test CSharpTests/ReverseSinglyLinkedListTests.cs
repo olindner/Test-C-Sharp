@@ -7,7 +7,7 @@ namespace Test_CSharp.Tests
     public class ReverseSinglyLinkedListTests
     {
         [TestMethod]
-        public void TestNullReverse()
+        public void TestNullNodeReverse_ReturnsNullNode()
         {
             Node nullNode = null;
 
@@ -17,7 +17,7 @@ namespace Test_CSharp.Tests
         }
 
         [TestMethod]
-        public void TestOneNodeReverse()
+        public void TestOneNodeReverse_ReturnsSameNode()
         {
             Node single = new Node(1);
 
