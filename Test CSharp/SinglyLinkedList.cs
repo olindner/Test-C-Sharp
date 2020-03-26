@@ -1,8 +1,8 @@
 ﻿namespace Test_CSharp
 {
-    public class ReverseSinglyLinkedList
+    public class SinglyLinkedList
     {
-        public static Node Run(Node root)
+        public static Node Reverse(Node root)
         {
             if (root == null) return root;
             Node first = null, second = root, third = null;

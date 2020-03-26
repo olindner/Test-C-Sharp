@@ -11,7 +11,7 @@ namespace Test_CSharp.Tests
         {
             Node nullNode = null;
 
-            Node result = ReverseSinglyLinkedList.Run(nullNode);
+            Node result = SinglyLinkedList.Reverse(nullNode);
 
             Assert.IsTrue(TestHelpers.TwoSinglyLinkedListsAreTheSame(nullNode, result));
         }
@@ -21,7 +21,7 @@ namespace Test_CSharp.Tests
         {
             Node single = new Node(1);
 
-            Node result = ReverseSinglyLinkedList.Run(single);
+            Node result = SinglyLinkedList.Reverse(single);
 
             Assert.IsTrue(TestHelpers.TwoSinglyLinkedListsAreTheSame(single, result));
         }
@@ -32,7 +32,7 @@ namespace Test_CSharp.Tests
             Node input = new Node(1, new Node(2, new Node(3)));
             Node expectedResult = new Node(3, new Node(2, new Node(1)));
 
-            Node result = ReverseSinglyLinkedList.Run(input);
+            Node result = SinglyLinkedList.Reverse(input);
 
             Assert.IsTrue(TestHelpers.TwoSinglyLinkedListsAreTheSame(expectedResult, result));
         }

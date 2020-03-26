@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-
 namespace Test_CSharp
 {
-    public class InorderBSTTraversal
+    public class BST
     {
-        public static List<int> Run(TreeNode root)
+        public static List<int> InorderIterativeTraversal(TreeNode root)
         {
             List<int> list = new List<int>();
             if (root == null) return list;
