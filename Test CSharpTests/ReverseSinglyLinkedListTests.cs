@@ -1,32 +1,31 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Xunit;
 using Test_CSharpTests;
 
 namespace Test_CSharp.Tests
 {
-    [TestClass()]
     public class ReverseSinglyLinkedListTests
     {
-        [TestMethod]
+        [Fact]
         public void TestNullNodeReverse_ReturnsNullNode()
         {
             Node nullNode = null;
 
             Node result = SinglyLinkedList.Reverse(nullNode);
 
-            Assert.IsTrue(TestHelpers.TwoSinglyLinkedListsAreTheSame(nullNode, result));
+            Assert.True(TestHelpers.TwoSinglyLinkedListsAreTheSame(nullNode, result));
         }
 
-        [TestMethod]
+        [Fact]
         public void TestOneNodeReverse_ReturnsSameNode()
         {
             Node single = new Node(1);
 
             Node result = SinglyLinkedList.Reverse(single);
 
-            Assert.IsTrue(TestHelpers.TwoSinglyLinkedListsAreTheSame(single, result));
+            Assert.True(TestHelpers.TwoSinglyLinkedListsAreTheSame(single, result));
         }
 
-        [TestMethod()]
+        [Fact]
         public void TestBasicReverse()
         {
             Node input = new Node(1, new Node(2, new Node(3)));
@@ -34,7 +33,7 @@ namespace Test_CSharp.Tests
 
             Node result = SinglyLinkedList.Reverse(input);
 
-            Assert.IsTrue(TestHelpers.TwoSinglyLinkedListsAreTheSame(expectedResult, result));
+            Assert.True(TestHelpers.TwoSinglyLinkedListsAreTheSame(expectedResult, result));
         }
     }
 }

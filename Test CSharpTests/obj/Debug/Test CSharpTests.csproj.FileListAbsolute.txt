@@ -1,10 +1,19 @@
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\obj\Debug\Test CSharpTests.csprojAssemblyReference.cache
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\Test CSharpTests.dll
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\Test CSharpTests.pdb
-C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\Test CSharp.exe
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\Test CSharp.pdb
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\Test CSharp.exe.config
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\obj\Debug\Test CSharpTests.csproj.CopyComplete
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\obj\Debug\Test CSharpTests.dll
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\obj\Debug\Test CSharpTests.pdb
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.abstractions.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.assert.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.core.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.assert.xml
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.core.xml
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.execution.desktop.xml
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.runner.utility.net452.dll
