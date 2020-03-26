@@ -16,6 +16,16 @@ namespace Test_CSharp.Tests
         }
 
         [Fact]
+        public void TestInorderRecursiveNullRoot_ReturnsEmptyList()
+        {
+            TreeNode nullTreeNode = null;
+
+            List<int> emptyList = BST.InorderRecursiveTraversal(nullTreeNode);
+
+            Assert.Empty(emptyList);
+        }
+
+        [Fact]
         public void TestInorderIterative_ReturnsCorrectOrder()
         {
             TreeNode left = new TreeNode(1);
@@ -50,6 +60,18 @@ namespace Test_CSharp.Tests
             List<int> expectedResult = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             List<int> result = BST.InorderIterativeTraversal(root);
+
+            Assert.Equal(10, result.Count);
+            Assert.Equal(expectedResult, result);
+        }
+
+        [Fact]
+        public void TestInorderRecusiveLarger_ReturnsCorrectOrder()
+        {
+            TreeNode root = new TreeNode(7, new TreeNode(4, new TreeNode(2, new TreeNode(1), new TreeNode(3)), new TreeNode(5, null, new TreeNode(6))), new TreeNode(10, new TreeNode(8, null, new TreeNode(9)), null));
+            List<int> expectedResult = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            List<int> result = BST.InorderRecursiveTraversal(root);
 
             Assert.Equal(10, result.Count);
             Assert.Equal(expectedResult, result);
