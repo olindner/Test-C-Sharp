@@ -4,6 +4,30 @@ namespace Test_CSharp
 {
     public class BST
     {
+        public static List<int> PreorderIterativeTraversal(TreeNode root)
+        {
+            List<int> list = new List<int>();
+            if (root == null) return list;
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            stack.Push(root);
+            while(stack.Count > 0)
+            {
+                root = stack.Pop();
+                list.Add(root.val);
+                if (root.right != null) stack.Push(root.right);
+                if (root.left != null) stack.Push(root.left);
+            }
+            return list;
+        }
+        public static List<int> PreorderRecursiveTraversal(TreeNode root)
+        {
+            List<int> list = new List<int>();
+            if (root == null) return list;
+            list.Add(root.val);
+            list.AddRange(PreorderRecursiveTraversal(root.left));
+            list.AddRange(PreorderRecursiveTraversal(root.right));
+            return list;
+        }
         public static List<int> InorderIterativeTraversal(TreeNode root)
         {
             List<int> list = new List<int>();
@@ -22,6 +46,7 @@ namespace Test_CSharp
             }
             return list;
         }
+
 
         public static List<int> InorderRecursiveTraversal(TreeNode root)
         {

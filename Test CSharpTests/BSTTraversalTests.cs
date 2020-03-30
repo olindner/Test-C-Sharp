@@ -1,10 +1,53 @@
 ﻿using Xunit;
 using System.Collections.Generic;
+using System;
 
 namespace Test_CSharp.Tests
 {
     public class BSTTraversalTests
     {
+        [Fact]
+        public void TestPreorderIterativeNullRoot_ReturnsEmptyList()
+        {
+            TreeNode nullTreeNode = null;
+
+            List<int> emptyList = BST.PreorderIterativeTraversal(nullTreeNode);
+
+            Assert.Empty(emptyList);
+        }
+
+        [Fact]
+        public void TestPreorderIterative_ReturnsCorrectAnswer()
+        {
+            TreeNode root = new TreeNode(5, new TreeNode(2, new TreeNode(1), new TreeNode(3, null, new TreeNode(4))), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), null)));
+            List<int> expectedList = new List<int>() { 5, 2, 1, 3, 4, 6, 8, 7 };
+
+            List<int> list = BST.PreorderIterativeTraversal(root);
+
+            Assert.Equal(expectedList, list);
+        }
+
+        [Fact]
+        public void TestPreorderRecursiveNullRoot_ReturnsEmptyList()
+        {
+            TreeNode nullTreeNode = null;
+
+            List<int> emptyList = BST.PreorderRecursiveTraversal(nullTreeNode);
+
+            Assert.Empty(emptyList);
+        }
+
+        [Fact]
+        public void TestPreorderRecursive_ReturnsCorrectAnswer()
+        {
+            TreeNode root = new TreeNode(5, new TreeNode(2, new TreeNode(1), new TreeNode(3, null, new TreeNode(4))), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), null)));
+            List<int> expectedList = new List<int>() { 5, 2, 1, 3, 4, 6, 8, 7 };
+
+            List<int> list = BST.PreorderRecursiveTraversal(root);
+
+            Assert.Equal(expectedList, list);
+        }
+
         [Fact]
         public void TestInorderIterativeNullRoot_ReturnsEmptyList()
         {
