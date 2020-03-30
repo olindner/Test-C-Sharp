@@ -1,5 +1,5 @@
 # Test-C-Sharp
-A repo for testing C# functions, tests, design patterns, and algorithms.
+A repo for testing functions, tests, design patterns, and algorithms in C#.
 
 ## "Test CSharp"
 Folder containing classes for individual programming exercises and experiments.
