@@ -47,7 +47,6 @@ namespace Test_CSharp
             return list;
         }
 
-
         public static List<int> InorderRecursiveTraversal(TreeNode root)
         {
             List<int> list = new List<int>();
@@ -57,6 +56,41 @@ namespace Test_CSharp
             list.Add(root.val);
             List<int> rightList = InorderIterativeTraversal(root.right);
             list.AddRange(rightList);
+            return list;
+        }
+
+        public static List<int> PostorderIterativeTraversal(TreeNode root)
+        {
+            List<int> list = new List<int>();
+            if (root == null) return list;
+            Stack<TreeNode> stackOne = new Stack<TreeNode>();
+            Stack<TreeNode> stackTwo = new Stack<TreeNode>();
+            stackOne.Push(root);
+            while(stackOne.Count > 0)
+            {
+                root = stackOne.Pop();
+                stackTwo.Push(root);
+                if (root.left != null) stackOne.Push(root.left);
+                if (root.right != null) stackOne.Push(root.right);
+
+            }
+            while(stackTwo.Count > 0)
+            {
+                root = stackTwo.Pop();
+                list.Add(root.val);
+            }
+            return list;
+        }
+
+        public static List<int> PostorderRecursiveTraversal(TreeNode root)
+        {
+            List<int> list = new List<int>();
+            if (root == null) return list;
+            List<int> leftList = PostorderRecursiveTraversal(root.left);
+            list.AddRange(leftList);
+            List<int> rightList = PostorderRecursiveTraversal(root.right);
+            list.AddRange(rightList);
+            list.Add(root.val);
             return list;
         }
     }
