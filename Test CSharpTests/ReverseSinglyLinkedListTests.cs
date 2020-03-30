@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using Test_CSharpTests;
+using Test_CSharp;
 
-namespace Test_CSharp.Tests
+namespace Test_CSharpTests
 {
     public class ReverseSinglyLinkedListTests
     {

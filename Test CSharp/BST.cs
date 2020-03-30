@@ -19,6 +19,7 @@ namespace Test_CSharp
             }
             return list;
         }
+
         public static List<int> PreorderRecursiveTraversal(TreeNode root)
         {
             List<int> list = new List<int>();
@@ -28,6 +29,7 @@ namespace Test_CSharp
             list.AddRange(PreorderRecursiveTraversal(root.right));
             return list;
         }
+
         public static List<int> InorderIterativeTraversal(TreeNode root)
         {
             List<int> list = new List<int>();

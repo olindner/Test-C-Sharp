@@ -1,8 +1,8 @@
 ﻿using Xunit;
 using System.Collections.Generic;
-using System;
+using Test_CSharp;
 
-namespace Test_CSharp.Tests
+namespace Test_CSharpTests
 {
     public class BSTTraversalTests
     {
