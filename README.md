@@ -7,6 +7,7 @@ Folder containing classes for individual programming exercises and experiments.
 - PreOrder Binary Search Tree Traversal (iterative and recursive)
 - InOrder Binary Search Tree Traversal (iterative and recursive)
 - PostOrder Binary Search Tree Traversal (iterative and recursive)
+- Longest Substring with K Unique Characters
 
 ## "Test CSharpTest"
 Folder containing unit tests for the above using Xunit.
