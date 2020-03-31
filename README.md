@@ -7,6 +7,7 @@ Folder containing classes for individual programming exercises and experiments.
 - PreOrder Binary Search Tree Traversal (iterative and recursive)
 - InOrder Binary Search Tree Traversal (iterative and recursive)
 - PostOrder Binary Search Tree Traversal (iterative and recursive)
+- Checking if a Binary Tree is a BST
 - Longest Substring with K Unique Characters
 
 ## "Test CSharpTest"
