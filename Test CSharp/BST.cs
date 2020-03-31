@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
 namespace Test_CSharp
 {
     public class BST
@@ -94,6 +94,13 @@ namespace Test_CSharp
             list.AddRange(rightList);
             list.Add(root.val);
             return list;
+        }
+
+        public static bool IsValidBST(TreeNode root)
+        {
+            if (root == null || (root.left == null && root.right == null)) return true;
+            if ((root.left != null && root.left.val >= root.val) || (root.right != null && root.right.val <= root.val)) return false;
+            return IsValidBST(root.left) && IsValidBST(root.right);
         }
     }
 }

@@ -1,10 +1,12 @@
-﻿namespace Test_CSharp
+﻿using System;
+
+namespace Test_CSharp
 {
     public class TreeNode
     {
-        public int val { get; }
-        public TreeNode left { get; set; }
-        public TreeNode right { get; set; }
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
         public TreeNode(int valIn)
         {
             val = valIn;
@@ -15,6 +17,42 @@
         {
             val = valIn;
             left = leftIn;
+            right = rightIn;
+        }
+        public TreeNode(TreeNode leftIn, int valIn, TreeNode rightIn)
+        {
+            val = valIn;
+            left = leftIn;
+            right = rightIn;
+        }
+        public TreeNode(int leftIn, int valIn, int rightIn)
+        {
+            val = valIn;
+            left = new TreeNode(leftIn);
+            right = new TreeNode(rightIn);
+        }
+        public TreeNode(TreeNode leftIn, int valIn, int rightIn)
+        {
+            val = valIn;
+            left = leftIn;
+            right = new TreeNode(rightIn);
+        }
+        public TreeNode(int leftIn, int valIn, TreeNode rightIn)
+        {
+            val = valIn;
+            left = new TreeNode(leftIn);
+            right = rightIn;
+        }
+        public TreeNode(TreeNode leftIn, int valIn)
+        {
+            val = valIn;
+            left = leftIn;
+            right = null;
+        }
+        public TreeNode(int valIn, TreeNode rightIn)
+        {
+            val = valIn;
+            left = null;
             right = rightIn;
         }
     }
