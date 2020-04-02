@@ -17,3 +17,4 @@ C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.executi
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.runner.reporters.net452.dll
 C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\sushi\source\repos\Test CSharp\Test CSharpTests\obj\Debug\Test CSharpTests.csproj.CoreCompileInputs.cache

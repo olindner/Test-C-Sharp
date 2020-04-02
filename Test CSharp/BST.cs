@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Test_CSharp
 {
@@ -96,11 +97,17 @@ namespace Test_CSharp
             return list;
         }
 
+        private static bool IsValidBSTHelper(TreeNode root, int min, int max)
+        {
+            if (root == null) return true;
+            if (root.val <= min || root.val >= max) return false;
+            return IsValidBSTHelper(root.left, min, Math.Min(max, root.val)) && IsValidBSTHelper(root.right, Math.Max(min, root.val), max);
+        }
+
         public static bool IsValidBST(TreeNode root)
         {
-            if (root == null || (root.left == null && root.right == null)) return true;
-            if ((root.left != null && root.left.val >= root.val) || (root.right != null && root.right.val <= root.val)) return false;
-            return IsValidBST(root.left) && IsValidBST(root.right);
+            if (root == null) return true;
+            return IsValidBSTHelper(root, int.MinValue, int.MaxValue);
         }
     }
 }
