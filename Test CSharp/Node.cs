@@ -1,4 +1,6 @@
-﻿namespace Test_CSharp
+﻿using System.Collections.Generic;
+
+namespace Test_CSharp
 {
     public class Node
     {
@@ -13,6 +15,18 @@
         {
             val = valIn;
             next = nodeIn;
+        }
+        public Node(int valIn, List<int> nextVals)
+        {
+            val = valIn;
+            next = new Node(nextVals[0]);
+            Node nextNode = next;
+            for (int i = 1; i < nextVals.Count; i++)
+            {
+                Node newNode = new Node(nextVals[i]);
+                nextNode.next = newNode;
+                nextNode = nextNode.next;
+            }
         }
     }
 }
